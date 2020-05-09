@@ -11,7 +11,7 @@ Xcode 11 still has bug with converting png files into icns file.
 	Name|Resolution|
 	----|---- |
 	16.png | 16 x 16 |
-	16\@2x.png | 32 x 32 |
+	16\\@2x.png | 32 x 32 |
 	32.png | 32 x 32 |
 	32\@2x.png | 64 x 64 |
 	128.png | 128 x 128 |
