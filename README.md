@@ -23,7 +23,7 @@ Xcode 11 still has bug with converting png files into icns file.
 
 	* All images' DPI is 72 pixels/inch.
 	* All blue images are suffixed with @2x, meant for retina display.
-	* All red images are meant for non retina display.
+	* All red images are meant for non-retina display.
 	* Thererically, you can only see one kind of color on one display.
 
 	![sketch.png](sketch.png)
@@ -64,13 +64,13 @@ Xcode 11 still has bug with converting png files into icns file.
 
 ## Why few people complaint about this bug? 
 
-After compiling and building, the testIconFormat.app is ready. If you check it in Finder, it just works fine on non retina and non-retina displays. When scaling, all formats are displayed smoothly.
+After compiling and building, the testIconFormat.app is ready. If you check it in Finder, it just works fine on non-retina and retina displays. When scaling, all formats are displayed smoothly.
 
-### Resizing on non retina display.
+### 1 Dynamic effect on non-retina display
 
 <img src="non retina effect resize.gif?raw=true">
 
-### Resizing on retina display.
+### 2 Dynamic effect  on retina display
 
 <img src="retina effect resize.gif?raw=true">
 
@@ -82,11 +82,11 @@ NSImage *appIcon = [NSImage imageNamed:@"AppIcon"];
 
 or in .xib/.storyboard, everything works like a charm.
 
-### Used on non retina display.
+### 3 Static effect on non-retina display
 
 ![non retina effect.png](non retina effect.png)
 
-### Used on retina display.
+### 4 Static effect on retina display
 
 ![retina effect.png](retina effect.png)
 
