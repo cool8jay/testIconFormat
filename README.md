@@ -50,7 +50,7 @@ Xcode 11 still has bug with converting png files into icns file.
     "NSCGImageRep 0x60000176c8c0 Size={128, 128} ColorSpace=sRGB IEC61966-2.1 colorspace BPS=0 Pixels=256x256 Alpha=NO AppearanceName=(null)",
     "NSCGImageRep 0x60000176ca40 Size={256, 256} ColorSpace=sRGB IEC61966-2.1 colorspace BPS=0 Pixels=512x512 Alpha=NO AppearanceName=(null)",
     "NSCGImageRep 0x60000176cbc0 Size={512, 512} ColorSpace=sRGB IEC61966-2.1 colorspace BPS=0 Pixels=1024x1024 Alpha=NO AppearanceName=(null)"
-)>
+	)>
 	```
 
 5. Right click icon of testIconFormat.app, Show Package Contents->Contents->Resources, you can see AppIcon.icns
