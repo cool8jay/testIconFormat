@@ -11,17 +11,20 @@ Xcode 11 still has bug with converting png files into icns file.
 	Name|Resolution|
 	----|---- |
 	16.png | 16 x 16 |
-	16@2x.png | 32 x 32 |
+	16\@2x.png | 32 x 32 |
 	32.png | 32 x 32 |
-	32@2x.png | 64 x 64 |
+	32\@2x.png | 64 x 64 |
 	128.png | 128 x 128 |
-	128@2x.png | 256 x 256 |
+	128\@2x.png | 256 x 256 |
 	256.png | 256 x 256 |
-	256@2x.png | 512 x 512 |
+	256\@2x.png | 512 x 512 |
 	512.png | 512 x 512 |
-	512@2x.png | 1024 x 1024 |
+	512\@2x.png | 1024 x 1024 |
 
-	All images' DPI is 72 pixels/inch.
+	* All images' DPI is 72 pixels/inch.
+	* All blue images are suffixed with @2x, meant for retina display.
+	* All red images are meant for non retina display.
+	* Thererically, you can only see one kind of color on one display.
 
 	![sketch.png](sketch.png)
 
@@ -63,11 +66,11 @@ Xcode 11 still has bug with converting png files into icns file.
 
 After compiling and building, the testIconFormat.app is ready. If you check it in Finder, it just works fine on non retina and non-retina displays. When scaling, all formats are displayed smoothly.
 
-Resizing on non retina display.
+### Resizing on non retina display.
 
 <img src="non retina effect resize.gif?raw=true">
 
-Resizing on retina display.
+### Resizing on retina display.
 
 <img src="retina effect resize.gif?raw=true">
 
@@ -78,6 +81,14 @@ NSImage *appIcon = [NSImage imageNamed:@"AppIcon"];
 ```
 
 or in .xib/.storyboard, everything works like a charm.
+
+### Used on non retina display.
+
+![non retina effect.png](non retina effect.png)
+
+### Used on retina display.
+
+![retina effect.png](retina effect.png)
 
 Thus, almost every people will not discover this issue(no traces at all), except who really cares about the icns file.
 
