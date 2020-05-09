@@ -59,16 +59,27 @@ Xcode 11 still has bug with converting png files into icns file.
 	![preview.png](preview.png)
 
 
-## Why few developers complaint about this bug?
+## Why few people complaint about this bug? 
 
-After compiling and building, the testIconFormat.app is ready. If you check it in Finder, it just works fine on non retina and non-retian displays. When scaling, all formats are displayed smoothly.
+After compiling and building, the testIconFormat.app is ready. If you check it in Finder, it just works fine on non retina and non-retina displays. When scaling, all formats are displayed smoothly.
 
-Resizing on non retian display.
-![non retina effect resize.gif](non retina effect resize.gif)
+Resizing on non retina display.
 
-Resizing on retian display.![retina effect resize.gif](retina effect resize.gif)
+<img src="non retina effect resize.gif?raw=true">
 
-Most people will not discover this issue(no traces at all), except who cares about the icns file.
+Resizing on retina display.
+
+<img src="retina effect resize.gif?raw=true">
+
+On the developer's side, if he uses the AppIcon in the same project, like
+
+```
+NSImage *appIcon = [NSImage imageNamed:@"AppIcon"];
+```
+
+or in .xib/.storyboard, everything works like a charm.
+
+Thus, almost every people will not discover this issue(no traces at all), except who really cares about the icns file.
 
 ## Alternative plan
 
