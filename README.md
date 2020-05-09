@@ -21,6 +21,8 @@ Xcode 11 still has bug with converting png files into icns file.
 	512.png | 512 x 512 |
 	512\@2x.png | 1024 x 1024 |
 
+@<!-- -->chloekek
+
 	* All images' DPI is 72 pixels/inch.
 	* All blue images are suffixed with @2x, meant for retina display.
 	* All red images are meant for non retina display.
