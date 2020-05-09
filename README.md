@@ -11,17 +11,15 @@ Xcode 11 still has bug with converting png files into icns file.
 	Name|Resolution|
 	----|---- |
 	16.png | 16 x 16 |
-	16\@ 2x.png | 32 x 32 |
+	16@<!-- -->2x.png | 32 x 32 |
 	32.png | 32 x 32 |
-	32\@2x.png | 64 x 64 |
+	32@<!-- -->2x.png | 64 x 64 |
 	128.png | 128 x 128 |
-	128\@2x.png | 256 x 256 |
+	128@<!-- -->2x.png | 256 x 256 |
 	256.png | 256 x 256 |
-	256\@2x.png | 512 x 512 |
+	256@<!-- -->2x.png | 512 x 512 |
 	512.png | 512 x 512 |
-	512\@2x.png | 1024 x 1024 |
-
-@<!-- -->chloekek
+	512@<!-- -->2x.png | 1024 x 1024 |
 
 	* All images' DPI is 72 pixels/inch.
 	* All blue images are suffixed with @2x, meant for retina display.
