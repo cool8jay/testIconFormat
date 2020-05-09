@@ -2,7 +2,7 @@
 
 Xcode 11 still has bug with converting png files into icns file.
 
-## Stpes to reproduce problem
+## Steps to reproduce problem
 
 1. Create images for icon in Sketch
 	
@@ -50,7 +50,7 @@ Xcode 11 still has bug with converting png files into icns file.
 )>
 	```
 
-5. Right click icon of testIconFormat.app, Show Package Contents->Contens->Resources, you can see AppIcon.icns
+5. Right click icon of testIconFormat.app, Show Package Contents->Contents->Resources, you can see AppIcon.icns
 
 6. Open AppIcon.icns with Preview.app
 
@@ -59,8 +59,21 @@ Xcode 11 still has bug with converting png files into icns file.
 	![preview.png](preview.png)
 
 
+## Why few developers complaint about this bug?
+
+After compiling and building, the testIconFormat.app is ready. If you check it in Finder, it just works fine on non retina and non-retian displays. When scaling, all formats are displayed smoothly.
+
+Resizing on non retian display.
+![non retina effect resize.gif](non retina effect resize.gif)
+
+Resizing on retian display.![retina effect resize.gif](retina effect resize.gif)
+
+Most people will not discover this issue(no traces at all), except who cares about the icns file.
+
 ## Alternative plan
 
-Use other tools to generate icns file and put it into Xcode project, very old school.
+Some developers reported a bug on [Radar](https://openradar.appspot.com/35152727) about `iconutil` problem. But as my test, `iconutil` is correct on Mojave. So the core reason may not be `iconutil`.
+
+Get back to the point, the right way and also old-school way is, use other tools to generate icns file and put it into Xcode project.
 
 After some testing, I'm sure [Icon Slate](https://www.kodlian.com/apps/icon-slate) can handle this properly.
